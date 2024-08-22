@@ -1,0 +1,477 @@
+:root {
+    --color-meteorite-dark: #2f1c6a;
+    --color-meteorite: #8c85ff;
+    --color-meteorite-light: #d5dfff;
+    --color-primary-dark: #5025d1;
+    --color-primary: #673de6;
+    --color-primary-light: #ebe4ff;
+    --color-danger-dark: #d63163;
+    --color-danger: #fc5185;
+    --color-danger-light: #ffe8ef;
+    --color-warning-dark: #fea419;
+    --color-warning: #ffcd35;
+    --color-warning-light: #fff8e2;
+    --color-success-dark: #008361;
+    --color-success: #00b090;
+    --color-success-light: #def4f0;
+    --color-dark: #1d1e20;
+    --color-gray-dark: #36344d;
+    --color-gray: #727586;
+    --color-gray-border: #dadce0;
+    --color-gray-light: #f2f3f6;
+    --color-light: #fff;
+    --color-azure: #357df9;
+    --color-azure-light: #e3ebf9;
+    --color-azure-dark: #265ab2;
+    --color-azir: rgb(231, 192, 160);
+}    
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+head img {
+    list-style-image: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+}
+.general{
+    background-color:var(--color-danger);
+    width: 100%;
+    height: 160%;
+}
+nav {
+    background: white;
+    border-radius: 50px;
+    padding: 10px;  
+    box-shadow: 0 25px 20px -20px rgb(0,0,0,0.4);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-grid;
+    padding: 13px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1d1e20;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+}
+
+
+nav ul li::after {
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+nav ul li:hover{
+    color: white;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+/*
+.menu {
+    background-color: #9b0707;
+    top: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: rgb(255, 252, 252);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background-color: #683333;
+}
+*/
+.redes{
+    background-color:var(--color-danger);
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.titulos{
+    background-color:var(--color-danger);
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+.filas{
+    flex: 25%;
+    padding: 5px;
+    width: 100%;
+    height: 40%;
+}
+
+.filas img{
+    margin-top: 5px;
+    width: 260px;
+    height: 260px;
+}
+
+.columnas{
+    flex: 25%;
+    padding: 5px;
+    width: 100%;
+    height: 40;
+}
+
+.columnas img{
+    margin-top: 5px;
+    width: 260px;
+    height: 260px;
+}
+
+@media (max-width: 600px){
+    .columnas{
+        flex: 25%;
+    }
+}
+
+@media (max-width: 600px){
+    .columnas{
+        flex: 100%;
+    }
+}
+
+.Segunda {
+    background-color: var(--color-danger-light);
+    width: 100%;
+    height: 80%;
+}
+
+.Decoración {
+    background-color: -var(--color-danger-light); /* Color de fondo del contenedor */
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    text-align: center; /* Alinear el texto horizontalmente en el centro */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    flex-direction: column; /* Organizar los elementos hijos en columna */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+}
+
+.Decoración h1 {
+    margin: 0; /* Eliminar el margen predeterminado del h1 para centrarlo perfectamente */
+    font-family:Arial; /*Elegir tipografía*/
+    color: #d63163;
+    margin: 0 0 10px 0; /* Establece un margen de 10px en la parte inferior del h1 para separarlo del elemento b */
+}
+
+.Decoración b {
+    text-align: left; /* Alinear el texto hacia la izquierda */
+    text-justify: auto;
+    font-family:Arial; /*Elegir tipografía*/
+}
+.blanco {
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    float: right; /* Flotar el contenedor hacia la derecha */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+}
+
+.blanco img {
+    width: 400px; /* Anchura de la imagen es 100px */
+    height: 400px; /* Altura de la imagen es 100px */
+    /* top: 100px; Esta propiedad no tiene efecto en este contexto */
+}
+
+
+.Galeria{
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.Galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+.Galeria img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+
+
+  body {
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans,sans-serif;
+    color: #1d1e20;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Tercera{
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-azir);
+}
+
+.servicios {
+    background-color: var(--color-azir); /* Color de fondo del contenedor */
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    text-align: center; /* Alinear el texto horizontalmente en el centro */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    flex-direction: column; /* Organizar los elementos hijos en columna */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+}
+
+.servicios h1 {
+    margin: 0; /* Eliminar el margen predeterminado del h1 para centrarlo perfectamente */
+    font-family:Arial; /*Elegir tipografía*/
+    color: var(--color-azure-dark);
+    margin: 0 0 10px 0; /* Establece un margen de 10px en la parte inferior del h1 para separarlo del elemento b */
+}
+
+.servicios b {
+    text-align: left; /* Alinear el texto hacia la izquierda */
+    text-justify: auto;
+    font-family:Arial; /*Elegir tipografía*/
+    color: black;
+}
+
+.negro {
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    float: left; /* Flotar el contenedor hacia la derecha */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    color: var(--color-danger-dark);
+}
+
+.negro img {
+    width: 400px; /* Anchura de la imagen es 100px */
+    height: 400px; /* Altura de la imagen es 100px */
+    /* top: 100px; Esta propiedad no tiene efecto en este contexto */
+}
+
+
+.Cuarta{
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-danger);
+}
+
+.elegirnos {
+    background-color: var(--color-danger); /* Color de fondo del contenedor */
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    text-align: center; /* Alinear el texto horizontalmente en el centro */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    flex-direction: column; /* Organizar los elementos hijos en columna */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    float: left;
+}
+
+.elegirnos h1 {
+    margin: 0; /* Eliminar el margen predeterminado del h1 para centrarlo perfectamente */
+    font-family:Arial; /*Elegir tipografía*/
+    color: var(--color-azure-dark);
+    margin: 0 0 10px 0; /* Establece un margen de 10px en la parte inferior del h1 para separarlo del elemento b */
+}
+
+.elegirnos b {
+    text-align: left; /* Alinear el texto hacia la izquierda */
+    text-justify: auto;
+    font-family:Arial; /*Elegir tipografía*/
+    color: black;
+}
+
+.amarillo {
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    float: right; /* Flotar el contenedor hacia la derecha */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    color: var(--color-danger-dark);
+}
+
+.amarillo img {
+    width: 400px; /* Anchura de la imagen es 100px */
+    height: 400px; /* Altura de la imagen es 100px */
+    /* top: 100px; Esta propiedad no tiene efecto en este contexto */
+}
+
+.quinta{
+    width: 100%;
+    height: 40%;
+    background-color: var(--color-azir);
+}
+
+.somos {
+    background-color: var(--color-azir); /* Color de fondo del contenedor */
+    width: 50%; /* Anchura del contenedor es el 50% del contenedor padre */
+    height: 100%; /* Altura del contenedor es el 100% del contenedor padre */
+    text-align: center; /* Alinear el texto horizontalmente en el centro */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    flex-direction: column; /* Organizar los elementos hijos en columna */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+}
+
+.somos h1 {
+    margin: 0; /* Eliminar el margen predeterminado del h1 para centrarlo perfectamente */
+    font-family:Arial; /*Elegir tipografía*/
+    color: var(--color-azure-dark);
+    margin: 0 0 50px 0; /* Establece un margen de 50px en la parte inferior del h1 para separarlo del elemento b */
+    text-align: left;
+}
+
+.somos b {
+    text-align: left; /* Alinear el texto hacia la izquierda */
+    text-justify: auto;
+    font-family:Arial; /*Elegir tipografía*/
+    color: black;
+}
+
+.sexta{
+    width: 100%;
+    height: 40%;
+    padding: 0%;
+    background-color: var(--color-danger);
+    padding: 20px; /* Espaciado interno de 20 píxeles */
+    text-align: center; /* Alinear el texto en el centro horizontalmente */
+    display: flex; /* Utilizar el modelo de caja flexible (flexbox) */
+    justify-content: center; /* Centrar horizontalmente los elementos hijos */
+    align-items: center; /* Centrar verticalmente los elementos hijos */
+}
+
+.contacto {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-azure-light);
+    border: 1px solid #ccc;
+    
+   
+border-radius: 5px;
+    
+   
+text-align: center;
+}
+
+.contacto h2 {
+    
+   
+font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto input[type="text"],
+.contacto input[type="tel"],
+.contacto textarea {
+    width: 100%;
+    padding: 8px;
+    
+   
+margin-bottom: 10px;
+    border: 1px solid #ccc;
+    
+   
+border-radius: 3px;
+}
+
+.contacto button {
+    background-color: #4caf50;
+    color: #fff;
+    
+   
+padding: 10px 20px;
+    
+   
+border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+   
+transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    
+   
+background-color: #45a049;
+}
+
+.inputs{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ultimo {
+    display: flex; /* Utiliza el modelo de caja flexible (flexbox) */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    background-color: var(--color-gray); /* Color de fondo gris oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+}
+
+.ultimo h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+.ultimo a {
+    margin: 0 10px; /* Margen entre los íconos de redes sociales */
+}
+
